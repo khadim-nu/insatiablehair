@@ -130,3 +130,10 @@ body{
 #email{
     color: #0086b3;
 }
+
+.custom_txtarea{
+    margin: 7% 1% 5% 3%;
+}
+.btns_row{
+    margin: 0% 10%;
+}

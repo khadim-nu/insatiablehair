@@ -2,59 +2,99 @@
 defined('BASEPATH') OR exit('No direct script access allowed');
 $title = "CI 3.0 Practice";
 $sub_title = "A project for practice";
-?><!DOCTYPE html>
-<html lang="en">
+?>
+<html>
     <head>
+        <title><?= $title ?></title>
         <meta charset="utf-8">
-        <title><?= $title; ?></title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="<?= base_url(); ?>assets/css/bootstrap.css" rel="stylesheet">
-        <link href="<?= base_url(); ?>assets/css/all.css" rel="stylesheet">
+        <link href="<?= base_url(); ?>assets/css/all_newzician.css" rel="stylesheet">
+        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
-        <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery.min.js"></script>
-        <script type="text/javascript" src="<?= base_url(); ?>assets/js/bootstrap.js"></script>
-        <script type="text/javascript" src="<?= base_url(); ?>assets/js/parsley.min.js"></script>
-        <script type="text/javascript" src="<?= base_url(); ?>assets/js/all.js"></script>
-        <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery-1.8.3.min.js"></script>
+        <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery.main.js"></script>
+        <script type="text/javascript" src="<?= base_url(); ?>assets/js/main-scrollbar.jss"></script>
 
-        <script type="text/javascript">var switchTo5x = true;</script>
-        <script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
-        <script type="text/javascript">stLight.options({publisher: "64b58c40-8aa9-4f39-86fc-f44f5fed0280", doNotHash: false, doNotCopy: false, hashAddressBar: false});</script>
+
+
+        <script>
+            $(document).ready(function(e) {
+                $('.btn-popup').click(function(event) {
+                    event.preventDefault();
+                    var btn_popup_id = $(this).attr('href');
+                    $(btn_popup_id).css({'transform': 'translate(0,0)', 'opacity': '1', 'z-index': '9999'});
+                });
+                $('.btn-close').click(function(event) {
+                    event.preventDefault(event);
+                    $('.popup-holder').css('transform', 'translate(0,-120%)')
+                    $('.popup-holder').css({'transform': 'translate(0,-100%)', 'opacity': '0', 'z-index': '-1'});
+                });
+                $('.btn-popup').click(function() {
+                    $('#wrapper').addClass('fixed');
+                });
+                $('.btn-close').click(function() {
+                    $('#wrapper').removeClass('fixed');
+                });
+            });
+        </script>
     </head>
-    <body>
-        <div class="wrapper">
-            <div class="header">
-                <h1 class="title"><?= $title; ?></h1>
-                <h4 class="title"><?= $sub_title; ?></h4>
-            </div>
-            <div class="container ">
-                <form id="servey" data-parsley-validate  class="form-horizontal" action="<?= base_url(); ?>index.php/welcome/submit_servey" method="post">
-
-                    <div class="col-md-12">
-                        <div class="col-md-6">
-                            <div class="row" align-center>
-                                <textarea rows="10" cols="40" name="post"></textarea>
-                            </div>
-                        </div>
-                        <div class="col-md-6 ">
-                            <div class="align-center">
-                                <input class=" btn btn-info custom-btn" type="submit" value="Submit"/>
-                            </div>
-                        </div>
+    <body class="admin-panel">
+        <div id="wrapper">
+            <header id="header">
+                <div class="login-area">
+                    <div class="img-box">
+                        <img src="<?= base_url(); ?>assets/images/twitter.png" alt="images description">
+                        <span>SP</span>
                     </div>
-                </form>
-            </div>
-            <div class="footer">
-                <div class="col-md-4">
-                    <h4 class="footer-title"><?= $title; ?></h4>
+                    <a class="logout btn-popup" href="#add-popup"><i class="icon-off"></i></a>
                 </div>
-                <div class="col-md-5 sub-title">
-                    <h5><?= $sub_title; ?></h5>
+                <div class="logo1">
+                    <a href="#"><img src="<?= base_url(); ?>assets/images/logo.png" alt="<?= $title ?>"></a>
                 </div>
-                <div class="col-md-2 pull-right counter">
+            </header>
+            <main id="main" role="main">
+                <div class="form-holder">
+                    <form class="login-form" method="POST" action="#">
+                        <section class="add-section">
+                            <h1>Post</h1>
+                            <textarea cols="100" rows="10" type="text" name="content" value="<?= ""; ?>"><?= ""; ?></textarea>
+                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
+                            <br>
+                            <div class="btn-holder">
+
+                                <input class="btn-save" type="submit" value="Post To Followers" name="action"/>
+                                <input class="btn-save" type="submit" value="Post To Post To Follows" name="action"/>
+
+                                <input class="btn-save" type="submit" value="Post Every Where" name="action"/>
+                                <input class="btn-save" type="submit" value="Clear" name="action"/>
+
+
+                            </div>
+                        </section>
+                    </form>
+                </div>
+            </main>
+            <footer id="footer">
+                <div class="logo1">
+                    <a href="#"><img src="<?= base_url(); ?>assets/images/logo.png" alt="<?= $title ?>"></a>
+                </div>
+                <span class="copyright">Copyright 2015 All rights reserved</span>
+            </footer>
+        </div>
+        <div id="add-popup" class="popup-holder">
+            <div class="popup-area">
+                <div class="popup-text">
+                    <div class="popup-container">
+                        <div class="txt-box">
+                            <h2>confirm log out</h2>
+                            <a class="btn-txt" href="#">save modifications</a>
+                            <a class="btn-txt" href="/admin/logout">ok</a>
+                        </div>
+                        <a href="#" class="btn-close">X</a>
+                    </div>
                 </div>
             </div>
         </div>
-
     </body>
 </html>
