@@ -110,3 +110,21 @@ ERROR - 2016-01-02 16:51:15 --> 404 Page Not Found --> assets
 ERROR - 2016-01-02 16:51:15 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/admin_panel_ci/system/libraries/Log.php 106
 ERROR - 2016-01-02 16:51:15 --> 404 Page Not Found --> assets
 ERROR - 2016-01-02 16:51:15 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/admin_panel_ci/system/libraries/Log.php 106
+ERROR - 2016-01-02 17:24:17 --> 404 Page Not Found --> assets
+ERROR - 2016-01-02 17:24:17 --> 404 Page Not Found --> assets
+ERROR - 2016-01-02 17:24:17 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/insatiablehair/system/libraries/Log.php 106
+ERROR - 2016-01-02 17:24:17 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/insatiablehair/system/libraries/Log.php 106
+ERROR - 2016-01-02 17:24:42 --> 404 Page Not Found --> assets
+ERROR - 2016-01-02 17:24:42 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/insatiablehair/system/libraries/Log.php 106
+ERROR - 2016-01-02 17:24:42 --> 404 Page Not Found --> assets
+ERROR - 2016-01-02 17:24:42 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/insatiablehair/system/libraries/Log.php 106
+ERROR - 2016-01-02 17:54:44 --> Severity: Notice  --> Undefined property: stdClass::$is_from_third_party /var/www/insatiablehair/application/models/common_model.php 31
+ERROR - 2016-01-02 17:26:56 --> 404 Page Not Found --> assets
+ERROR - 2016-01-02 17:26:56 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/insatiablehair/system/libraries/Log.php 106
+ERROR - 2016-01-02 17:27:47 --> 404 Page Not Found --> assets
+ERROR - 2016-01-02 17:27:47 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/insatiablehair/system/libraries/Log.php 106
+ERROR - 2016-01-02 17:28:06 --> 404 Page Not Found --> aseets
+ERROR - 2016-01-02 17:28:06 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/insatiablehair/system/libraries/Log.php 106
+ERROR - 2016-01-02 18:01:19 --> You did not select a file to upload.
+ERROR - 2016-01-02 18:01:19 --> Severity: Warning  --> chmod(): Operation not permitted /var/www/insatiablehair/system/libraries/Log.php 106
+ERROR - 2016-01-02 18:01:19 --> Severity: Notice  --> Undefined index: fname /var/www/insatiablehair/application/helpers/email_templates_helper.php 205

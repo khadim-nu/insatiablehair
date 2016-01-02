@@ -23,6 +23,16 @@ class Admin extends MY_Controller {
             redirect('admin/login');
         }
     }
+    public function add_post() {
+        if (is_admin()) {
+            $data['user_role'] = 'admin';
+            $data['title'] = 'Dashboard';
+            $this->load->view('admin/dashboard', $data);
+        } else {
+            redirect('admin/login');
+            
+        }
+    }
 
     public function login() {
         if (!is_logged_in()) {

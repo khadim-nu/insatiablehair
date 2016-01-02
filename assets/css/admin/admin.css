@@ -34,7 +34,7 @@ body.admin-page{
 }
 #header .logo a{
     display: block;
-    background: url(../../images/admin/logo.png) no-repeat;
+    background: url(../../images/IHBANN.png) no-repeat;
     min-width: 179px;
     min-height: 70px;
 }
@@ -328,7 +328,11 @@ body.admin-page{
 /*Content*/
 #content{
     overflow: hidden;
-    padding: 0 0 0 84px;
+    padding: 0 0 0 222px;
+}
+.post_wrap{
+    margin: 0% 25%;
+    width: 50%;
 }
 #content .all-detail{
     margin: 30px auto 0;
