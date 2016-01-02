@@ -1,100 +1,82 @@
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-$title = "InsatiableHair";
-$sub_title = "Our mission is to provide premium quality virgin hair at an affordable price";
-?>
-<html>
-    <head>
-        <title><?= $title ?></title>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<style type="text/css">
 
-        <link href="<?= base_url(); ?>assets/css/all.css" rel="stylesheet">
-        <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+	::selection{ background-color: #E13300; color: white; }
+	::moz-selection{ background-color: #E13300; color: white; }
+	::webkit-selection{ background-color: #E13300; color: white; }
 
-        <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery-1.8.3.min.js"></script>
-        <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery.main.js"></script>
-        <script type="text/javascript" src="<?= base_url(); ?>assets/js/main-scrollbar.jss"></script>
+	body {
+		background-color: #fff;
+		margin: 40px;
+		font: 13px/20px normal Helvetica, Arial, sans-serif;
+		color: #4F5155;
+	}
 
+	a {
+		color: #003399;
+		background-color: transparent;
+		font-weight: normal;
+	}
 
+	h1 {
+		color: #444;
+		background-color: transparent;
+		border-bottom: 1px solid #D0D0D0;
+		font-size: 40px;
+		font-weight: normal;
+		margin: 0 0 14px 0;
+		padding: 14px 15px 10px 15px;
+	}
 
-        <script>
-            $(document).ready(function(e) {
-                $('.btn-popup').click(function(event) {
-                    event.preventDefault();
-                    var btn_popup_id = $(this).attr('href');
-                    $(btn_popup_id).css({'transform': 'translate(0,0)', 'opacity': '1', 'z-index': '9999'});
-                });
-                $('.btn-close').click(function(event) {
-                    event.preventDefault(event);
-                    $('.popup-holder').css('transform', 'translate(0,-120%)')
-                    $('.popup-holder').css({'transform': 'translate(0,-100%)', 'opacity': '0', 'z-index': '-1'});
-                });
-                $('.btn-popup').click(function() {
-                    $('#wrapper').addClass('fixed');
-                });
-                $('.btn-close').click(function() {
-                    $('#wrapper').removeClass('fixed');
-                });
-            });
-        </script>
-    </head>
-    <body class="admin-panel">
-        <div id="wrapper">
-            <header id="header">
-                <div class="login-area">
-                    <div class="img-box">
-                        <img src="<?= base_url(); ?>assets/images/twitter.png" alt="images description">
-                        <span>SP</span>
-                    </div>
-                    <a class="logout btn-popup" href="#add-popup"><i class="icon-off"></i></a>
-                </div>
-                <div class="logo1">
-                    <a href="#"><img src="<?= base_url(); ?>assets/images/IHBANN.png" alt="<?= $title ?>"></a>
-                </div>
-            </header>
-            <main id="main" role="main">
-                <div class="form-holder">
-                    <form class="login-form" method="POST" action="#">
-                        <section class="add-section">
-                            <h1>Post</h1>
-                            <textarea cols="100" rows="10" type="text" name="content" value="<?= ""; ?>"><?= ""; ?></textarea>
-                            <!--<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>-->
-                            <br>
-                            <div class="btn-holder">
+	code {
+		font-family: Consolas, Monaco, Courier New, Courier, monospace;
+		font-size: 12px;
+		background-color: #f9f9f9;
+		border: 1px solid #D0D0D0;
+		color: #002166;
+		display: block;
+		margin: 14px 0 14px 0;
+		padding: 12px 10px 12px 10px;
+	}
 
-                                <input class="btn-save" type="submit" value="Post To Followers" name="action"/>
-                                <input class="btn-save" type="submit" value="Post To Post To Follows" name="action"/>
-
-                                <input class="btn-save" type="submit" value="Post Every Where" name="action"/>
-                                <input class="btn-save" type="submit" value="Clear" name="action"/>
-
-
-                            </div>
-                        </section>
-                    </form>
-                </div>
-            </main>
-            <footer id="footer">
-                <div class="logo1">
-                    <a href="#"><img src="<?= base_url(); ?>assets/images/IHBANN.png" alt="<?= $title ?>"></a>
-                </div>
-                <span class="copyright">Copyright 2015 All rights reserved</span>
-            </footer>
-        </div>
-        <div id="add-popup" class="popup-holder">
-            <div class="popup-area">
-                <div class="popup-text">
-                    <div class="popup-container">
-                        <div class="txt-box">
-                            <h2>confirm log out</h2>
-                            <a class="btn-txt" href="#">save modifications</a>
-                            <a class="btn-txt" href="/admin/logout">ok</a>
-                        </div>
-                        <a href="#" class="btn-close">X</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </body>
+	#body{
+		margin: 0 15px 0 15px;
+	}
+	
+	p.footer{
+		text-align: right;
+		font-size: 11px;
+		border-top: 1px solid #D0D0D0;
+		line-height: 32px;
+		padding: 0 10px 0 10px;
+		margin: 20px 0 0 0;
+	}
+	
+	#container{
+		margin: 10px;
+		border: 1px solid #D0D0D0;
+		-webkit-box-shadow: 0 0 8px #D0D0D0;
+	}
+	</style>
+</head>
+<body>
+<center>
+	<h1>OZONE PLAY</h1>
+        <br><br><br><br>
+        <h2>Admin Pannel</h2>
+        <a href="<?= base_url(); ?>admin/login">Login</a> <br>
+        <a href="<?= base_url(); ?>admin/register">Register</a>
+        <br><br><br><br>
+        <h2>Developer Pannel</h2>
+        <a href="<?= base_url(); ?>developer/login">Login</a> <br>
+        <a href="<?= base_url(); ?>developer/register">Register</a>
+        <br><br><br><br>
+        <h2>Player Pannel</h2>
+        <a href="<?= base_url(); ?>player/login">Login</a> <br>
+        <a href="<?= base_url(); ?>player/register">Register</a>
+</center>
+</body>
 </html>
