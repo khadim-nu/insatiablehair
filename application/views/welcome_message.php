@@ -1,7 +1,7 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
-$title = "CI 3.0 Practice";
-$sub_title = "A project for practice";
+$title = "InsatiableHair";
+$sub_title = "Our mission is to provide premium quality virgin hair at an affordable price";
 ?>
 <html>
     <head>
@@ -9,7 +9,7 @@ $sub_title = "A project for practice";
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <link href="<?= base_url(); ?>assets/css/all_newzician.css" rel="stylesheet">
+        <link href="<?= base_url(); ?>assets/css/all.css" rel="stylesheet">
         <link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 
         <script type="text/javascript" src="<?= base_url(); ?>assets/js/jquery-1.8.3.min.js"></script>
@@ -50,7 +50,7 @@ $sub_title = "A project for practice";
                     <a class="logout btn-popup" href="#add-popup"><i class="icon-off"></i></a>
                 </div>
                 <div class="logo1">
-                    <a href="#"><img src="<?= base_url(); ?>assets/images/logo.png" alt="<?= $title ?>"></a>
+                    <a href="#"><img src="<?= base_url(); ?>assets/images/IHBANN.png" alt="<?= $title ?>"></a>
                 </div>
             </header>
             <main id="main" role="main">
@@ -77,7 +77,7 @@ $sub_title = "A project for practice";
             </main>
             <footer id="footer">
                 <div class="logo1">
-                    <a href="#"><img src="<?= base_url(); ?>assets/images/logo.png" alt="<?= $title ?>"></a>
+                    <a href="#"><img src="<?= base_url(); ?>assets/images/IHBANN.png" alt="<?= $title ?>"></a>
                 </div>
                 <span class="copyright">Copyright 2015 All rights reserved</span>
             </footer>
