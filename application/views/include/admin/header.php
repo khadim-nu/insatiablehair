@@ -22,6 +22,5 @@
             <div class="links">
                 <a class="add-game" href="<?= base_url(); ?>admin/add_post">add Post</a>
             </div>
-            <!--<img height="100" src="<?= base_url(); ?>assets/images/IHBANN.png" />-->
         </div>
     </header>

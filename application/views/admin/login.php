@@ -3,7 +3,7 @@
 <div id="login-wrap">
     <div class="main-holder">
         <div class="heading-area">
-            <img src="<?= base_url(); ?>assets/images/IHBANN.png" />
+            <img src="<?= base_url(); ?>assets/images/logo1.png" />
             <STRONG class="heading">Admin Login</STRONG>
         </div>
         <div class="holder">
