@@ -31,11 +31,14 @@ body.admin-page{
     vertical-align: middle;
     margin:0 10px 0 0;
     padding: 7px 21px;
+    
+    width: 285px;
 }
 #header .logo a{
     display: block;
-    background: url(../../images/IHBANN.png) no-repeat;
+    background: url(../../images/admin/logo1.png)  no-repeat;
     min-width: 179px;
+        background-size: 250px;
     min-height: 70px;
 }
 
@@ -277,7 +280,7 @@ body.admin-page{
 #sidebar .fixed ul li{
     margin: 0 0 30px;
     display: block;
-    min-width: 250px;
+    min-width: 285px;
 }
 #sidebar .fixed ul li a{
     display: block;
@@ -288,7 +291,9 @@ body.admin-page{
     padding: 8px 0 0 37px;
     text-transform: capitalize;
 }
-#sidebar .fixed ul li a:hover{ text-decoration: underline;}
+#sidebar .fixed ul li a:hover{ 
+    text-decoration: underline;
+}
 #sidebar .fixed ul li a .text{
     display: inline-block;
     vertical-align: middle;
@@ -328,11 +333,11 @@ body.admin-page{
 /*Content*/
 #content{
     overflow: hidden;
-    padding: 0 0 0 222px;
+    padding: 0 0 0 285px;
 }
 .post_wrap{
-    margin: 0% 25%;
-    width: 50%;
+    margin: 0% 9%;
+    width: 90%;
 }
 #content .all-detail{
     margin: 30px auto 0;
@@ -670,6 +675,9 @@ body.admin-page{
 #content .info-wrapper .rank-area .value span{
     padding: 0 0 0 4px;
     color: #3e9dbc;
+}
+.btn_wrap{
+    margin: 2% 4%;
 }
 #content .info-wrapper .text-area .btn-wrap{
     overflow: hidden;
@@ -1148,7 +1156,7 @@ table.dataTable.no-footer{border:1px solid #514d95 !important;}
     position: absolute;
     top:-16px;
     left: 0;
-    font-size:12px;
+    font-size:17px;
     line-height:14px;
     color: red;
     -webkit-transition: all 1.5s ease;
@@ -1188,7 +1196,7 @@ table.dataTable.no-footer{border:1px solid #514d95 !important;}
     font-size: 20px;
     line-height: 22px;
     outline: medium none;
-    padding: 8px 26px;
+    padding: 16px 33px;
     text-align: center;
     text-transform: capitalize;
     vertical-align: middle;

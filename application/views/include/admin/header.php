@@ -8,7 +8,7 @@
                 </div>
                 <span class="user">
                     <span class="name">
-                        <a href="<?= base_url(); ?>admin/basic_info"><?= $this->session->userdata('user_data')->name;?></a>
+                        <a href="<?= base_url(); ?>admin/basic_info"><?= $this->session->userdata('user_data')->name; ?></a>
                     </span>
                     <span class="arrow"><a href="<?= base_url(); ?>admin"></a></span>
                 </span>
@@ -20,7 +20,8 @@
             </div>
             <strong class="logo"><a href="<?= base_url(); ?>"></a></strong>
             <div class="links">
-                    <a class="add-game" href="<?= base_url(); ?>admin/add_post">add Post</a>
+                <a class="add-game" href="<?= base_url(); ?>admin/add_post">add Post</a>
             </div>
+            <!--<img height="100" src="<?= base_url(); ?>assets/images/IHBANN.png" />-->
         </div>
     </header>
